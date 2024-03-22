@@ -4,10 +4,10 @@ const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: {
-    index: './src/index.tsx',
+    client: './src/index.tsx',
   },
   output: {
-    filename: 'js/bundle.js',
+    filename: '[name]/js/bundle.js',
     path: path.resolve(__dirname, '../dist'),
   },
   module: {
